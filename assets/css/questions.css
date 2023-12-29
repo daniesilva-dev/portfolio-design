@@ -1,0 +1,99 @@
+#footer {
+    padding-top: 6rem;
+    padding-bottom: 25rem;
+    background-image: url(../image/bg-img-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footer .questions {
+    width: 100%;
+}
+
+#footer .questions .questions-itens {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+} 
+
+#footer .questions .questions-itens .title-acc {
+    width:70%;
+}
+
+#footer .questions .questions-itens h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#footer .questions-itens .accordion {
+    width:70%;
+    height: 4.5rem;
+    border: 3px solid var(--color-primar);
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.8rem;
+}
+
+#footer .questions-itens .accordion:hover {
+    background-color: #fff9d8;
+}
+
+#footer .questions-itens .accordion span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.panel {
+    width:70%;
+    padding: 1rem 2rem 2rem 2rem;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    font-size: var(--paragraph);
+    animation: fadeEffects 0.5s;
+}
+@keyframes fadeEffects {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#footer .questions-itens .accordion .fa {
+    font-size: 1.5rem;
+}
+
+/*Classe add icone accordion*/
+.rotate {
+    color: var(--color-primar);
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+
+@media screen  and (max-width: 600px){
+    #footer .questions .questions-itens .title-acc {
+        text-align: center;
+        width: 100%;
+    }
+    .panel {
+        width:100%;
+    }
+    #footer .questions-itens .accordion {
+        width:100%;
+    }
+
+    #footer {
+        
+        background-image: url(../image/bg-img-footer-mobile.jpg);
+        background-position: center;
+        background-size: 145%;
+        background-repeat: no-repeat;
+    }
+}

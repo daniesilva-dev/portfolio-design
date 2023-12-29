@@ -1,0 +1,77 @@
+#headline {
+    height: 750px;
+    background-image: url(../image/bg-headline);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#headline .content-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headline .content-headline h1 {
+    font-size: var(--title);
+    font-weight: 800;
+    text-align: center;
+}
+
+#headline .content-headline h2 {
+    font-size: var(--sub-title);
+    font-weight: 400;
+}
+
+
+#headline .content-headline h1 span {
+    color: var(--color-primar);
+}
+
+#headline .content-headline a {
+    display: inline-block;
+    color: var(--color-black);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: all 0.2s;
+}
+
+#headline .content-headline a:hover {
+    transform: scale(0.7);
+    background-color: #ffffff;
+    box-shadow: #0000001a 0 0 30px;
+}
+
+.content-bt-port {
+    position: relative;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.content-bt-port {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen  and (max-width: 768px){
+    #headline .content-headline h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen  and (min-width: 425px ) and (max-width: 767px){
+    #headline .content-headline h1 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen  and (min-width: 320px ) and (max-width: 424px){
+    #headline .content-headline h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
