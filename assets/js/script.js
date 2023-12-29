@@ -1,24 +1,17 @@
 
-
+//TABs
 function openTab(event, tabName) {
-
     let tabcontent = document.getElementsByClassName("tabcontent");
-    
     for ( let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display ="none";
     }
-
     let tablinks = document.getElementsByClassName("tablinks");
-
     for ( let i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
-
 }
-
 window.onload = () => {
     document.querySelectorAll('.tablinks')[0].click();
 }
@@ -39,7 +32,6 @@ revealImageI.addEventListener('click', function() {
 
 
 //FAQ
-
 let accordion = document.querySelectorAll('.accordion');
 for(let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function() {

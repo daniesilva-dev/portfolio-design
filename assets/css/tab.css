@@ -94,6 +94,7 @@
 .image-none-illust,
 .image-none-design {
     display: none;
+    animation: fadeEffects 0.5s;
 }
 
 .image-none {
