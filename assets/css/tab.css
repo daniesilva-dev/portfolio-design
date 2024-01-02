@@ -109,6 +109,9 @@
     .content-tabs .images .image {
         min-width: 325px;
     }
+    .content-tabs .select-tabs {
+        padding: 0 10px;
+    }
 }
 
 
