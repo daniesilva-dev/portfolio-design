@@ -44,7 +44,8 @@
     width: 130px;
     height: 130px;
     border-radius: 100px;
-    background-color: slategrey;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.095);
 }
 
 .client-mockup {
